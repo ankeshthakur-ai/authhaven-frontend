@@ -25,7 +25,7 @@ function LandingPage() {
   window.onload = function () {
     const token = localStorage.getItem('token');
     if (token) {
-      window.location.href = '/dashboard';
+      window.location.href = 'https://authheaven.vercel.app/dashboard';
     }
   };
 
