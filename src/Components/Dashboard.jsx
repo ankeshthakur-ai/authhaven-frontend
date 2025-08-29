@@ -30,7 +30,7 @@ const Dashboard = () => {
       }
     };
     fetchUser();
-  }, []);
+  }, [navigate]);
 
   const handleLogout = () => {
     localStorage.removeItem('token');
