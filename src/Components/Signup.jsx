@@ -46,7 +46,7 @@ const Signup = () => {
       toast.success("Account created successfully!");
       setTimeout(() => navigate("/login"), 1500);
     } catch (err) {
-      const msg = err.response?.data?.msg || err.response?.data?.message || "Sign Up failed. Try again.";
+      const msg = err.response?.data?.msg || err.response?.data?.message || "Sign Up failed. Server Error";
       setName('');
       setEmail('');
       setPassword('');
